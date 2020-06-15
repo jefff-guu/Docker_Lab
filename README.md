@@ -17,7 +17,7 @@ Steps: (Suppose you have Docker Engine on Linux or Docker Desktop on your Mac)
 
 ## Now we are inside of golang container, run following build command to generate static executable
 root@af3e87a15727:/go# CGO_ENABLED=0 go get -a -ldflags '-s' github.com/jefff-guu/Go_Lab
-
+root@af3e87a15727:/go# mv $GOPATH/bin/Go_Lab $GOPATH/bin/helloworld
 root@af3e87a15727:/go# ldd $GOPATH/bin/helloworld                                                
    not a dynamic executable
 
