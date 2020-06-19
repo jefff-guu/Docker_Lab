@@ -1,4 +1,4 @@
-#This is actually a Docker Lab
+This is actually a Docker Lab
 ==========
 
 The purpose is to:
