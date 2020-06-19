@@ -1,9 +1,11 @@
-helloworld
+#This is actually a Docker Lab
 ==========
 
-Create Docker image FROM scratch
+The purpose is to:
 
-Introduce Multi-Stage Builds.
+1. Create Docker image FROM scratch
+
+2. Introduce Multi-Stage Builds.
 
 The helloworld.go provides a simple web server that says Hello World.
 
@@ -11,6 +13,7 @@ The Dockerfile creates a Docker image from scratch and places the Hello World we
 
 Steps: (Suppose you have Docker Engine on Linux or Docker Desktop on your Mac)
 
+```
 # docker pull golang
 
 # docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker):$(which docker) -it golang /bin/bash
@@ -30,3 +33,4 @@ root@af3e87a15727:/go# docker build -t jeff/helloworld $GOPATH
 
 Outside the container, you can run following command to start the container on your Mac and open a browser to verify it.
 # docker run -it --name helloword -p 8080:8080 jeff/helloworld
+```
